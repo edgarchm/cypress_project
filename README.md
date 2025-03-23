@@ -1,4 +1,4 @@
-# SOGETI - Cypress Test Accelerator
+#Cypress Test Accelerator
 
 <b>Available features:</b>
 1. Web automation(Built-in)
