@@ -1,0 +1,9 @@
+{
+   "authHeaders": {
+    "headers": {
+        "authorization": "Basic c3RvcmVmcm9udDokYWxseTIwMjFCZWF1dHk="
+    },
+  
+    "failOnStatusCode": true
+}
+}

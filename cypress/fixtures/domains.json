@@ -1,0 +1,19 @@
+{
+  "domains": {
+    "baseURLCanada":"https://bcsm-026.dx.commercecloud.salesforce.com/s/SC/",
+    "home":"/",
+    
+    
+    "findStorePage": "stores/?showMap=true&horizontalView=true&isForm=true",
+    "homePage": "home/",
+    "loginPage": "login/",
+    "hairCarePage": "hair-care/shop-all-hair-care/",
+    "hairColorPage": "hair-color/shop-all-hair-color/",
+    "bottlesAndSprayersPage": "salon-supplies/salon-essentials/bottles-and-sprayers/",
+    "cartPage": "cart/",
+    "deliveryPage":"Checkout-Begin?stage=shipping#shipping",
+    "paymentPage": "Checkout-Begin?stage=payment#payment",
+    "placeorderPage": "Checkout-Begin?stage=placeOrder#placeOrder"
+  
+}
+}

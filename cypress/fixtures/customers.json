@@ -1,0 +1,12 @@
+{
+    "customers": {
+        "username": "kaltatay@gmail.com",
+        "password": "Yfcnmz@88",
+        "customerFirstName": "JOANNA",
+        "customerLastName": "SNOW",
+        "customerPassword": "Welcome_123",
+        "errorMessage":"Invalid login or password. Remember that password is case-sensitive. Please try again.",
+        "canadaPostalCode": "M6N 2B9",
+        "usaPostalCode": "76210"
+    }
+}

@@ -1,0 +1,13 @@
+node_modules
+cypress/videos
+cypress/screenshots
+../allure-report/
+allure-report/data/test-cases/
+allure-results/
+cqa/
+cypress/downloads/
+allure-report/
+allure-report
+sally_automation/allure-report
+sally_automation/mochawesome-report
+sally_automation/cypress/downloads/

@@ -1,0 +1,161 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 0,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-02-01T03:15:56.449Z",
+    "end": "2023-02-01T03:15:56.451Z",
+    "duration": 0,
+    "testsRegistered": 3,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "0e166b62-d9ed-4387-b642-9a7f63e79cd4",
+      "title": "",
+      "fullFile": "/Users/ulugbekiskanadzhiev/Documents/Projects/bsgcosmoprof-cypress_smoketest_poc_cosmo-2926ac8bb9b9/cypress/e2e/bsgtest.cy.js",
+      "file": "/cypress/e2e/bsgtest.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "552e1087-d1cb-42b5-9fa0-9a0886003a0d",
+          "title": "CosmoProf Basic Tests",
+          "fullFile": "/Users/ulugbekiskanadzhiev/Documents/Projects/bsgcosmoprof-cypress_smoketest_poc_cosmo-2926ac8bb9b9/cypress/e2e/bsgtest.cy.js",
+          "file": "/cypress/e2e/bsgtest.cy.js",
+          "beforeHooks": [
+            {
+              "title": "\"before each\" hook for \"check my account\"",
+              "fullTitle": "CosmoProf Basic Tests \"before each\" hook for \"check my account\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.fixture('accounts').then(function (accounts) {\n  let account = accounts[\"cosmoTemplate01\"];\n  account.customer.login = \"autotest-\" + Date.now() + \"@sallybeauty.com\";\n  account.customer.email = \"autotest-\" + Date.now() + \"@sallybeauty.com\";\n  console.log(account.customer.login)\n  cy.task('createCustomer', account);\n  cy.login(account);\n})",
+              "err": {
+                "message": "ReferenceError: cy is not defined",
+                "estack": "ReferenceError: cy is not defined\n    at Context.<anonymous> (cypress/e2e/bsgtest.cy.js:4:5)\n    at process.processImmediate (node:internal/timers:471:21)",
+                "diff": null
+              },
+              "uuid": "cca8ea13-81ca-4cf4-b4a7-b73899cb51a2",
+              "parentUUID": "552e1087-d1cb-42b5-9fa0-9a0886003a0d",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "check my account",
+              "fullTitle": "CosmoProf Basic Tests check my account",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('/');\ncy.get('.nav-account-info-icon').click();\ncy.get('.account-dashboard').should('be.visible');",
+              "err": {},
+              "uuid": "28257838-d10f-4b79-bd91-869e58adcae2",
+              "parentUUID": "552e1087-d1cb-42b5-9fa0-9a0886003a0d",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "search hair color",
+              "fullTitle": "CosmoProf Basic Tests search hair color",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('');\ncy.get('input.nav-search-input:visible').type('hair color{enter}');\ncy.get('.search-keywords').should('contain.text', 'hair color');",
+              "err": {},
+              "uuid": "81262fbd-6265-4bc6-91c9-bfa57df48ea0",
+              "parentUUID": "552e1087-d1cb-42b5-9fa0-9a0886003a0d",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "add item to basket",
+              "fullTitle": "CosmoProf Basic Tests add item to basket",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.fixture('products').then(function (products) {\n  let product = products[\"product1\"];\n  cy.visit('/' + product.pid + '.html');\n  cy.get('[data-attr=\"size\"]').find('button').last().click();\n  cy.get('.add-to-cart').click();\n  cy.get('.add-to-basket-alert').should('be.visible');\n})",
+              "err": {},
+              "uuid": "b66637f7-dbe1-4e69-a1c3-703919ccfe28",
+              "parentUUID": "552e1087-d1cb-42b5-9fa0-9a0886003a0d",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [
+            "28257838-d10f-4b79-bd91-869e58adcae2",
+            "81262fbd-6265-4bc6-91c9-bfa57df48ea0",
+            "b66637f7-dbe1-4e69-a1c3-703919ccfe28"
+          ],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "10.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}

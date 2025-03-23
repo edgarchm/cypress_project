@@ -1,0 +1,43 @@
+{
+    "product1": {
+        "pid": "USA-M-738029"
+    },
+    "product2": {
+        "pid": "USA-008717"
+    },
+    "promotion": {
+        "promotion_code": "123ABC"
+    },
+    "sizeVariationPID": {
+        "SA": [{ "pid1": "SLNCAR60" }, {}, {}],
+        "SC": [{ "pid1": "ION101" }, {}, {}]
+    },
+    "qtyVariationPID": {
+        "SA": [{ "pid1": "SBS-800291" }, {}, {}],
+        "SC": [{ "pid1": "SBS-800291" }, {}, {}]
+    },
+    "colorVariationPID": {
+        "SA": [{ "pid1": "WELLA14" }, {}, {}],
+        "SC": [{ "pid1": "ION202" }, {}, {}]
+    },
+    "individ2HDEligiblePID": {
+        "SA":[{ "pid1": "SBS-302318" }, {}, {}],
+    "SC":[{ "pid1": "SBS-302318" }, {}, {}]},
+    "individ2HDNotEligiblePID": {
+        "SA":[{ "pid1": "SBS-305447" }, {}, {}],
+    "SC":[{ "pid1": "SBS-305447" }, {}, {}]},
+    "bundledURLPID": {
+        "SA": [{ "pid1": "ULTBUND" }, {}, {}],
+        "SC": [{ "pid1": "ULTBUND" }, {}]
+    },
+    "individPID": {
+        "SA": [{ "pid1": "SBS-302318" }, {}, {}],
+        "SC": [{ "pid1": "SBS-302279" }, {}]
+    },
+    
+    "bopisPID": {
+
+        "SA": [{"pid1": "SBS-680638"}, {}, {}],
+        "Sc": [{ "pid1": "SBS-680638" }, {}]
+    }
+}
