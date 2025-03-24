@@ -36,7 +36,7 @@
     "cypressapp:xlsandboxus":"npx cypress open --e2e --env configFile=xlsandboxus,'TAGS=@US'",
     "cypressapp:xlsandboxca":"npx cypress open --e2e --env configFile=xlsandboxca,'TAGS=@CA'",
     "runner": "npx cypress open --e2e",
-    "test:smokeURL": "npx cypress run  -e 'TAGS=@smoke','sally_home=https://bcsm-026.dx.commercecloud.salesforce.com/s/SC/'",
+    "test:smokeURL": "npx cypress run  -e 'TAGS=@smoke','test_home=https://test.com/s/SC/'",
     "test:regression": "npx cypress run --env allure=true -e TAGS=@regression",
     "test:xlsandboxca": "npx cypress run --env configFile=xlsandboxca,TAGS=@pdp1"
   },
