@@ -1,6 +1,6 @@
 // TODO: Move these to a config file
-const ocapiBaseURL = 'https://dev.cosmoprofbeauty.com/s/CosmoProf/dw/shop/v19_5';
-const ocapiClientID = '8eda7b30-135c-40d7-9567-3006a01b0bf1';
+const ocapiBaseURL = 'https://test.com/s/CosmoProf/dw/shop/v19_5';
+const ocapiClientID = '8eda7b30-135c-40d7-9567-3006a01b0bxy';
 
 const authGuestCustomer = async () => {
     var myHeaders = new Headers();
