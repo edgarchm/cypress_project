@@ -1,9 +1,7 @@
 {
   "domains": {
-    "baseURLCanada":"https://bcsm-026.dx.commercecloud.salesforce.com/s/SC/",
+    "baseURLCanada":"https://test.com/s/SC/",
     "home":"/",
-    
-    
     "findStorePage": "stores/?showMap=true&horizontalView=true&isForm=true",
     "homePage": "home/",
     "loginPage": "login/",
@@ -15,5 +13,5 @@
     "paymentPage": "Checkout-Begin?stage=payment#payment",
     "placeorderPage": "Checkout-Begin?stage=placeOrder#placeOrder"
   
-}
+  }
 }
