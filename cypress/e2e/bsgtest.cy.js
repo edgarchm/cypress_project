@@ -3,8 +3,8 @@ describe('CosmoProf Basic Tests', () => {
   beforeEach(() => {
     cy.fixture('accounts').then(function (accounts) {
       let account = accounts["cosmoTemplate01"];
-      account.customer.login = "autotest-" + Date.now() + "@sallybeauty.com";
-      account.customer.email = "autotest-" + Date.now() + "@sallybeauty.com";
+      account.customer.login = "autotest-" + Date.now() + "@test.com";
+      account.customer.email = "autotest-" + Date.now() + "@test.com";
       console.log(account.customer.login)
       cy.task('createCustomer', account);
 
