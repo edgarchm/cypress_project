@@ -1,6 +1,6 @@
 {
     "env": {
-      "sally_home": "https://bcsm-026.dx.commercecloud.salesforce.com/s/SC/",
+      "sally_home": "https://test.com/s/SC/",
       "siteID":"SC"
     }
   }
