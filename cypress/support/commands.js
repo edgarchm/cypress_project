@@ -32,7 +32,7 @@ const loginPage = new LoginPage();
 /// <reference types="@cypress/xpath" />
 /// <reference types = "Cypress-iframe"/>
 
-console.log(data.domains.baseUrlSallyUS)
+console.log(data.domains.baseUrlTestUS)
 
 Cypress.Commands.add('login', (account) => {
     //cy.visit('login/');
@@ -74,7 +74,7 @@ Cypress.Commands.add('popup',() =>{
 //     cy.get('#login-btn').click({force:true});
 //     cy.get('.account-dashboard').should('be.visible');
 // }
-// else if (Cypress.config('baseUrl') === data.domains.baseUrlSallyUS){
+// else if (Cypress.config('baseUrl') === data.domains.baseUrlTestUS){
 //     cy.visit('/s/SA/login/');
 //     const loginPage = new LoginPage();
 //     loginPage.getUsername().type(custom.customers.username);
