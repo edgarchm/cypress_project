@@ -1,6 +1,6 @@
 {
     "env": {
-      "sally_home": "https://test.com/s/SC/",
+      "test_home": "https://test.com/s/SC/",
       "siteID":"SC"
     }
   }
