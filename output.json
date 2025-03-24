@@ -43,7 +43,7 @@
               "fail": true,
               "pending": false,
               "context": null,
-              "code": "cy.fixture('accounts').then(function (accounts) {\n  let account = accounts[\"cosmoTemplate01\"];\n  account.customer.login = \"autotest-\" + Date.now() + \"@sallybeauty.com\";\n  account.customer.email = \"autotest-\" + Date.now() + \"@sallybeauty.com\";\n  console.log(account.customer.login)\n  cy.task('createCustomer', account);\n  cy.login(account);\n})",
+              "code": "cy.fixture('accounts').then(function (accounts) {\n  let account = accounts[\"cosmoTemplate01\"];\n  account.customer.login = \"autotest-\" + Date.now() + \"@test.com\";\n  account.customer.email = \"autotest-\" + Date.now() + \"@test.com\";\n  console.log(account.customer.login)\n  cy.task('createCustomer', account);\n  cy.login(account);\n})",
               "err": {
                 "message": "ReferenceError: cy is not defined",
                 "estack": "ReferenceError: cy is not defined\n    at Context.<anonymous> (cypress/e2e/bsgtest.cy.js:4:5)\n    at process.processImmediate (node:internal/timers:471:21)",
