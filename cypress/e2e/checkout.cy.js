@@ -17,8 +17,8 @@ describe('CosmoProf Checkout Tests', () => {
   beforeEach(() => {
     cy.fixture('accounts').then(function (accounts) {
       let account = accounts["cosmoTemplate01"];
-      account.customer.login = "autotest-" + Date.now() + "@sallybeauty.com";
-      account.customer.email = "autotest-" + Date.now() + "@sallybeauty.com";
+      account.customer.login = "autotest-" + Date.now() + "@test.com";
+      account.customer.email = "autotest-" + Date.now() + "@stest.com";
       cy.task('createCustomer', account).then(function () {
         cy.login(account);
       });
@@ -48,7 +48,7 @@ describe('CosmoProf Checkout Tests', () => {
       cy.get('#expirationMonth').select('12');
       cy.get('#expirationYear').select('2030');
       cy.get('#securityCode').type('123');
-      cy.get('#email').type('autotest-foo@sallybeauty.com');
+      cy.get('#email').type('autotest-foo@test.com');
       cy.get('#phoneNumber').type('2145555555');
       cy.get('.submit-payment').click();
 
