@@ -61,11 +61,9 @@ module.exports = defineConfig({
     setupNodeEvents,
     specPattern: ["**/*.feature"],
     experimentalStudio: true,
-    //baseUrl: "https://dev.cosmoprofbeauty.com",
-    baseUrl: "https://bcsm-026.dx.commercecloud.salesforce.com",
+    baseUrl: "https://test.com",
     env: {
-          sally_home:"https://bcsm-026.dx.commercecloud.salesforce.com/s/SA/",
-          // sally_home: "https://bcsm-026.dx.commercecloud.salesforce.com/s/SC/",
+          sally_home:"https://test.com/s/SA/",
       allure: true,
       allureReuseAfterSpec: true,
       //  siteID:"SC",
