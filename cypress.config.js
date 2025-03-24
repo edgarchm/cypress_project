@@ -63,7 +63,7 @@ module.exports = defineConfig({
     experimentalStudio: true,
     baseUrl: "https://test.com",
     env: {
-          sally_home:"https://test.com/s/SA/",
+          test_home:"https://test.com/s/SA/",
       allure: true,
       allureReuseAfterSpec: true,
       //  siteID:"SC",
