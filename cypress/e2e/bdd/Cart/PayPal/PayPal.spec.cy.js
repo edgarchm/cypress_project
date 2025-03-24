@@ -16,9 +16,6 @@ const cartPage = new CartPage();
 Guest User navigates to cart page with an available ship to me item in cart and clicks learn more button for PayPal
  
 **************************************************   End    **************************************************/
-
-//Given('user on the cart page with an available ship to me item in cart',() => {});
-
 When('user clicks PayPal learn more link in cart', () => {
     cartPage.getlearnmorePayPal()
         .its('0.contentDocument')
@@ -32,11 +29,6 @@ When('user clicks PayPal learn more link in cart', () => {
     });
 });
 Then('user should verify that link is clickable', () => {
-    // cy.request('https://www.paypal.com/sdk/js?client-id=Aaz3mdfMbY4cx_yGQZ2woYx0jBwPtH9tjqMvVoHmwkBhIZgMSJAV0z6aL6beKf5AjwZNml_zysvNsV56&components=messages').as('messages')
-    // cy.get('@messages').should((resp) => {
-    //     expect(resp.status).to.eq(200)
-    // })
-
     cy.get('@mes').should((resp) => {
         expect(resp.status).to.eq(200)
     })
